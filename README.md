@@ -22,8 +22,8 @@ A high-performance arbitrage bot for Solana that uses Kamino flash loans and Jup
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/solana-flashloan-arbitrage.git
-cd solana-flashloan-arbitrage
+https://github.com/katongole224/Solana_flashloan_arbitrage.git
+cd Solana_flashloan_arbitrage
 ```
 
 2. Install dependencies:
