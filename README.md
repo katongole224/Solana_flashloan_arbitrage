@@ -1,9 +1,8 @@
-# Solana_flashloan_arbitrage
 # Solana Flash Loan Arbitrage Bot
 
 A high-performance arbitrage bot for Solana that uses Kamino flash loans and Jupiter aggregator to execute profitable trades across multiple DEXs.
 
-## ðŸš€ Features
+## 🚀 Features
 
 - **Flash Loan Integration**: Utilizes Kamino's flash loan protocol to borrow and repay SOL within a single transaction
 - **Multi-DEX Arbitrage**: Scans for opportunities across all major Solana DEXs via Jupiter aggregator
@@ -12,18 +11,18 @@ A high-performance arbitrage bot for Solana that uses Kamino flash loans and Jup
 - **Transaction Optimization**: Uses Address Lookup Tables (ALTs) to optimize transaction size
 - **Detailed Reporting**: Logs all trades with timestamps and profitability metrics
 
-## ðŸ“‹ Prerequisites
+## 📋 Prerequisites
 
 - Node.js v16+ and npm
 - Solana CLI (recommended for key management)
 - A Solana wallet with at least 0.1 SOL for transaction fees
 - Access to a reliable Solana RPC endpoint (Alchemy, QuickNode, etc.)
 
-## ðŸ”§ Installation
+## 🔧 Installation
 
 1. Clone the repository:
 ```bash
-git clone [https://github.com/yourusername/solana-flashloan-]
+git clone https://github.com/yourusername/solana-flashloan-arbitrage.git
 cd solana-flashloan-arbitrage
 ```
 
@@ -37,7 +36,7 @@ npm install
    - Set up your RPC endpoint
    - Adjust configuration parameters
 
-## âš™ï¸ Configuration
+## ⚙️ Configuration
 
 Open `config.js` and update the following fields:
 
@@ -65,9 +64,9 @@ module.exports = {
 };
 ```
 
-âš ï¸ **Security Warning**: Never commit your private key to a public repository. Consider using environment variables for sensitive information.
+⚠️ **Security Warning**: Never commit your private key to a public repository. Consider using environment variables for sensitive information.
 
-## ðŸ”¬ Setup Address Lookup Tables
+## 🔬 Setup Address Lookup Tables
 
 Before running the bot, set up Address Lookup Tables to optimize transaction size:
 
@@ -77,7 +76,7 @@ node setup-lookup-tables.js
 
 This creates lookup tables that store frequently used account addresses, greatly reducing transaction size.
 
-## ðŸš€ Usage
+## 🚀 Usage
 
 Start the arbitrage bot:
 
@@ -92,7 +91,7 @@ The bot will:
 4. Execute trades when profitable opportunities are found
 5. Log results to the console and trades directory
 
-## ðŸ” Bot Strategies
+## 🔍 Bot Strategies
 
 ### Flash Loan + Jupiter Arbitrage
 
@@ -102,7 +101,7 @@ The bot borrows SOL via a flash loan, performs a swap to another token (e.g., US
 
 The more advanced strategy uses the Bellman-Ford algorithm to detect arbitrage opportunities across multiple tokens. This can find complex paths that may offer higher profitability.
 
-## ðŸ“Š Monitoring & Logs
+## 📊 Monitoring & Logs
 
 The bot creates detailed log files in the `trades` directory:
 - Successful trades are logged with profitability metrics
@@ -114,42 +113,42 @@ Console output provides real-time information about:
 - Trade execution and confirmation
 - Error messages and debugging information
 
-## âš¡ Performance Optimization
+## ⚡ Performance Optimization
 
 - **RPC Endpoint**: Use a premium RPC endpoint for faster responses
 - **Flash Loan Amount**: Adjust the flash loan amount based on liquidity
 - **Check Interval**: Balance between frequent checks and RPC rate limits
 - **Safety Buffer**: Adjust to balance between capturing more opportunities and avoiding failed transactions
 
-## ðŸ§ª Testing
+## 🧪 Testing
 
 Before running with real funds:
 1. Test with a small flash loan amount
 2. Monitor for a period to ensure profitability
 3. Gradually increase amounts as you verify stability
 
-## ðŸ“ Additional Notes
+## 📝 Additional Notes
 
 - **Slippage**: The bot uses a fixed slippage of 0.1% (100 basis points)
 - **Fee Calculation**: Includes flash loan fees (0.05%) and optional Jito tips
 - **Transaction Size**: Optimized to fit within Solana's transaction size limits
 - **Token Support**: Currently supports SOL, USDC, USDT, and BONK tokens by default
 
-## ðŸ”’ Security Considerations
+## 🔒 Security Considerations
 
 - Store your private key securely
 - Run the bot on a dedicated machine
 - Monitor the bot regularly for unexpected behavior
 - Implement stop-loss mechanisms for risk management
 
-## ðŸ“œ License
+## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## ðŸ¤ Contributing
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
 
 ---
 
-âš ï¸ **Disclaimer**: Trading cryptocurrencies involves risk. This software is provided as-is with no guarantees. Use at your own risk.
+⚠️ **Disclaimer**: Trading cryptocurrencies involves risk. This software is provided as-is with no guarantees. Use at your own risk.
