@@ -15,7 +15,7 @@ A high-performance arbitrage bot for Solana that uses Kamino flash loans and Jup
 
 - Node.js v16+ and npm
 - Solana CLI (recommended for key management)
-- A Solana wallet with at least 0.1 SOL for transaction fees
+- A Solana wallet with at least 1.0 SOL for transaction fees
 - Access to a reliable Solana RPC endpoint (Alchemy, QuickNode, etc.)
 
 ## 🔧 Installation
